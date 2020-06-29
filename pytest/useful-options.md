@@ -1,5 +1,11 @@
 # Pytest options
 
+## -v, --verbose
+- Reports more info about running tests.
+
+## -q, --quiet
+- Opposite of the `--verbose`, reports less info.
+
 ## --collect-only
 - Show which test will be run with given options and configuration.
 - It's helpful to check of other options that select tests are correct before running the tests.
@@ -55,3 +61,6 @@ $ pytest --maxfail=3
 ## --lf, --last-failed
 - Lets us run the last failing test.
 - It's useful if we have been using `--tb` options that hides failing test traceback and we want to see the taceback of that failing test (avoids running all the passing tests again)
+
+## --ff, --failed-first
+- It doesn same as `--last-failed` and then run the rest of the tests passed last time.
