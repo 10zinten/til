@@ -35,3 +35,13 @@ def test_replace():
 $ pytest -m run_these_please
 ```
 - Marker Expression can also be like `-m "marker1 and not marker2"`
+
+## -x, --exitfirst
+- Lets us stop the entire test session immediately when a test fails withour moving on to running next test (default behavior).
+- It's uesful when debugging a problem.
+
+## --maxfail=num
+- While `-x` option stops after one test failure, `--maxfail=num` lets `num` failure happen.
+```shell
+$ pytest --maxfail=3
+```
