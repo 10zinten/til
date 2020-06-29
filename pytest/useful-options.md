@@ -34,3 +34,4 @@ def test_replace():
 ```shell
 $ pytest -m run_these_please
 ```
+- Marker Expression can also be like `-m "marker1 and not marker2"`
