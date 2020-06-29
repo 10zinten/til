@@ -47,7 +47,11 @@ $ pytest --maxfail=3
 ```
 
 ## --tb=no
-- Turn of the traceback.
+- Turn off the traceback.
 
 ## -s and --capture=method
 - `-s` flag allows print statements and its shortcut to `--capture=no`
+
+## --lf, --last-failed
+- Lets us run the last failing test.
+- It's useful if we have been using `--tb` options that hides failing test traceback and we want to see the taceback of that failing test (avoids running all the passing tests again)
