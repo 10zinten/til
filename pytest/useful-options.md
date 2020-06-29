@@ -45,3 +45,9 @@ $ pytest -m run_these_please
 ```shell
 $ pytest --maxfail=3
 ```
+
+## --tb=no
+- Turn of the traceback.
+
+## -s and --capture=method
+- `-s` flag allows print statements and its shortcut to `--capture=no`
