@@ -13,3 +13,24 @@ $ pytest -k "asdict or defaults" --collect-only
   - Selects tests with `asdict` or `defaults` in their name.
   - Display which tests are going to be run because of `--collect-only` option.
   - Remove `--collect-only` option to run the actual tests.
+
+## -m MARKEXPR
+- Lets us run marked test together.
+- Marker is best way to mark a subset of test functions.
+- Marker can be any  name. for eg:
+```python
+import pytest
+
+...
+@pytest.mark.run_these_please
+def test_memeber_access():
+...
+
+@pytest.mark.run_these_please
+def test_replace():
+...
+```
+- To run all the tests with marker `run_these_please`
+```shell
+$ pytest -m run_these_please
+```
