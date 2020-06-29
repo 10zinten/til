@@ -10,6 +10,6 @@
 ```shell
 $ pytest -k "asdict or defaults" --collect-only
 ```
-  - Selects tests with `assdict` or `defaults` in their name.
+  - Selects tests with `asdict` or `defaults` in their name.
   - Display which tests are going to be run because of `--collect-only` option.
   - Remove `--collect-only` option to run the actual tests.
