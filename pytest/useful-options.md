@@ -75,3 +75,7 @@ $ pytest --maxfail=3
   - `short` prints just the assert line.
   - `line` keeps the failure to oneline.
   - `no` removes the traceback entirely.
+
+## --durations=N
+- It reports slowest `N` test.
+- It's incredibly helpful when trying to speed up our test suite.
