@@ -64,3 +64,14 @@ $ pytest --maxfail=3
 
 ## --ff, --failed-first
 - It doesn same as `--last-failed` and then run the rest of the tests passed last time.
+
+## -l, --showlocals
+- Displays local variables and their values with tracebacks for the failing tests.
+
+## --tb=style
+- Modifies the way tracebacks for failures are output.
+- It comes in handy when tracebacks get annoying.
+- Useful styles are:
+  - `short` prints just the assert line.
+  - `line` keeps the failure to oneline.
+  - `no` removes the traceback entirely.
