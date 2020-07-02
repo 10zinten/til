@@ -8,6 +8,7 @@
       with pytest.raises(TypeError):
           tasks.add(task='not a Task object')
    ```
+   - Non `Task` object is added to tasks list. `add` method should raise `TypeError` exception
 
 - Sometime we may need to check for exception parameters.
   ```python
@@ -18,3 +19,4 @@
     exception_msg = excinfo.value.args[0]
     assert exception_msg == "db_type must be a 'tiny' or 'mongo'"
   ```
+  - Not only *db_type* should be `str` (passed `mysql` *db_type*), it should be either `tiny` or `mongo`.
