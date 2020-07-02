@@ -11,6 +11,7 @@
    - Non `Task` object is added to tasks list. `add` method should raise `TypeError` exception
 
 - Sometime we may need to check for exception parameters.
+- This let us look at exception more closely.
   ```python
   def test_start_tasks_db_raises():
     """Make sure unsupported db raises an exception."""
