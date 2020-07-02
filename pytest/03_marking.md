@@ -19,5 +19,5 @@
   ```
 - Run the smoke test with `-m` option
   ```bash
-  $ python -m "smoke" test_api_exceptions.py
+  $ pytest -m "smoke" test_api_exceptions.py
   ```
