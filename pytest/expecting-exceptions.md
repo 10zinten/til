@@ -1,7 +1,7 @@
 # Expecting Exceptions
 - To make sure a function (especially API function) raises exception
 - Always raise exception from API function if desirable type is not passed.
-- Simple check for exception raised example.
+- Simple check for type of exception raised example.
   ```python
   def test_add_raises():
       """add() should raise an exception with wrong type param."""
@@ -9,7 +9,7 @@
           tasks.add(task='not a Task object')
    ```
 
-- Sometime we may need to check for exception message.
+- Sometime we may need to check for exception parameters.
   ```python
   def test_start_tasks_db_raises():
     """Make sure unsupported db raises an exception."""
