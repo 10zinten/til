@@ -1,7 +1,7 @@
 # Marking Test Function
 - pytest provides a cool mechanism to let us mark the test functions
 - Useful for marking subset of our tests as "smoke test".
-- **Smoke test* let us get sense for whether or not there is some major break in the system. It's by convention not all-inclusive of tests.
+- **Smoke test** let us get sense for whether or not there is some major break in the system. It's by convention not all-inclusive of tests.
   ```python
   @pytest.mark.smoke
   def test_list_raises():
